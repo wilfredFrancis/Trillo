@@ -1,0 +1,59 @@
+.btn-inline{
+
+	border: none;
+	color: var(--color-primary);
+	font-size: inherit;
+	border-bottom: 1px solid currentColor;
+	padding-bottom: 2px;
+	display: inline-block;
+	background-color: transparent;
+	cursor: pointer;
+
+
+	&:hover{
+
+		color: var(--color-grey-dark-1);
+
+	}
+
+	&:focus{
+
+		outline: none;
+		animation: pulsate 1s infinite;
+		
+	}
+}
+
+.arrow{
+
+    margin-left: 3px;
+    border: none;
+	color: var(--color-primary);
+	font-size: inherit;
+	border-bottom: 1px solid currentColor;
+	padding-bottom: 2px;
+	display: inline-block;
+	background-color: transparent;
+	cursor: pointer;
+	transition: all .4s;
+
+	&:focus{
+
+		outline: none;
+		box-shadow: var(--shadow-light);
+		// transform: translateY(-5px) scale(1.1);
+		
+	}
+
+	&:hover{
+
+		color: var(--color-grey-dark-1);
+		& span{
+
+			animation: right 1s infinite;
+		}
+
+	}
+	
+}
+
